@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zakaznik</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Nanum+Gothic&display=swap" rel="stylesheet">
+  
+  <style>
+    * {
+            margin: 0;
+            padding: 0;
+            padding-left: 10px;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+    }
+
+    .logo {
+      color:#FFF;
+      font-size: 150%;
+    }
+
+    .textik {
+      color: #FFF;
+      font-size: 50px;
+      padding-left: 30px;
+    }
+
+    body {
+      background-color: #212121;
+    }
+
+     Header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 30px 100px;
+        opacity: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 99;
+        background-color: #212121;
+    }
+
+    .navigation a {
+        position: relative;
+        font-size: 1.1em;
+        color: #FFF;
+        text-decoration: none;
+        font-weight: 500;
+        margin-left: 40px;
+    }
+
+    .navigation a::after {
+        content: '';
+        position: absolute;
+        left: 5px;
+        bottom: -6px;
+        width: 100%;
+        height: 3px;
+        background: #FFF;
+        border-radius: 5px;
+        transform: scaleX(0);
+        transition: transform .5s;
+    }
+
+    .navigation a:hover::after {
+        transform: scaleX(1);
+    }
+
+    .navbar-icons {
+      height: 25px;
+      margin-left: 30px;
+      cursor: pointer;
+    }
+
+    .banner {
+      display: flex;
+      margin-top: 80px;
+    }
+
+
+    .left-column {
+      margin-top: 60px;
+      flex-basis: 35%;
+      margin-left: 60px;
+    }
+
+    .right-column img {
+      width: 100%;
+    }
+
+    .img {
+      position: absolute;
+      right: 120px;
+      top: 90px;
+      width: 470px;
+    }
+
+    
+    .search-box {
+      width: 30%;
+      display:flex;
+      padding-bottom: 7px;
+      border-bottom: 1px solid #fff;
+    }
+
+    .search-box img {
+      height: 20px;
+      width: 30px;
+      cursor: pointer;
+    }
+
+    .search-box input {
+      width: 100%;
+      margin-left: 15px;
+      font-size: 17px;
+      border: 0;
+      outline: none;
+      background: transparent;
+      color:#FFF;
+
+    }
+
+    ::placeholder {
+      color:#FFF;
+    }
+
+
+    .odstavec {
+      color: #FFF;
+      font-size: 25px;
+      padding-left: 30px;
+      
+    }
+
+    .btn {
+      position: absolute;
+      padding-left: 30px;
+      
+    }
+    .btn button {
+      padding: 7px 25px 7px 25px;
+      margin-top: 20px;
+      margin-right: 16px;
+      outline: none;
+      border: 2px solid #FFF;
+      border-radius: 20px;
+      cursor: pointer;
+      color:#FFF;
+      margin-bottom: 50px;
+    }
+
+    .primary-btn, .secoundary-btn {
+      
+        background: transparent;
+        border: 1px solid #fff;
+        outline: none;
+        border-radius: 20px;
+        cursor: pointer;
+        color: #fff;
+        font-weight: 500;
+        transition: .5s;
+    }
+
+    
+    .primary-btn:hover, .secoundary-btn:hover {
+    background: #fff;
+    color: #000;
+    }
+
+    .social-icons {
+      margin-top:85px;
+      opacity: .4;
+      margin-left: 10px;
+      cursor: pointer;
+    }
+
+    .social-icons img {
+      height: 28px;
+      margin: 0 14px;
+    }
+
+    footer {
+        padding: 170px 100px 35px 100px ;
+        background-color: #212121;
+        text-align: center;
+        color: #FFF;
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    
+      <h1 class="logo"><img src="" alt="">Logo</h1>
+      <div class="search-box">
+        <img src="search.png">
+        <input type="text">
+    </div>
+      <nav class="navigation">
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+
+          
+            <img src="bell.png" class="navbar-icons">
+            <img src="user.png" class="navbar-icons">
+            <img src="menu.png" class="navbar-icons">
+        
+      </nav>
+  
+  </header>
+  
+
+  <div class="banner">
+    <div class="left-column">
+      
+      
+        <h1 class="textik">Lorem, ipsum.</h1>
+        <h3 class="odstavec">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque accusamus accusantium iste laudantium repudiandae ad nesciunt ipsum praesentium sequi. Hic sint deleniti ipsam, illum vitae rerum.</h3>
+        <div class="btn">
+          <a href=""><button type="button" class="primary-btn">Learn more</button></a>
+          <button type="button" class="secoundary-btn">Watch video</button>
+        </div>
+        <div class="social-icons">
+          <img src="twitter.png" alt="twitter">
+          <img src="instagram.png" alt="instagram">
+          <img src="pinterest.png" alt="pinterest">
+          <img src="facebook.png" alt="facebook">
+        </div>
+    </div>
+    <div class="right-column"></div>
+    <img class="img" src="cookies.png" alt="cookies">
+  </div>
+ 
+
+    
+  <footer>
+    <p>&copy; 2023 Sharecloud</p>
+  </footer>
+</body>
+</html>
